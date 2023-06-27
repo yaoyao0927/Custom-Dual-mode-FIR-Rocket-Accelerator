@@ -1,0 +1,202 @@
+ 
+****************************************
+Report : reference
+Design : ChipTop
+Version: N-2017.09-SP3
+Date   : Mon Jun 26 15:30:11 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CKBD3BWP40P140     tcbn28hpcplusbwp40p140ssg0p81vm40c_ccs
+                                  0.630000      36     22.680000  
+CKBD4BWP40P140     tcbn28hpcplusbwp40p140ssg0p81vm40c_ccs
+                                  0.882000       1      0.882000  
+CKBD6BWP40P140     tcbn28hpcplusbwp40p140ssg0p81vm40c_ccs
+                                  1.134000       1      1.134000  
+CKND0BWP40P140     tcbn28hpcplusbwp40p140ssg0p81vm40c_ccs
+                                  0.252000       1      0.252000  
+ChipTop_AsyncResetSynchronizerShiftReg_w1_d3_i0_1
+                                  9.450000       1      9.450000  h, n
+ChipTop_DigitalTop_0          1244025.321174
+                                                 1  1244025.321174
+                                                                  b, h, n
+ChipTop_DividerOnlyClockGenerator_0
+                                  0.000000       1      0.000000  h
+ChipTop_EICG_wrapper_0            2.520000       1      2.520000  b, h
+ChipTop_GenericDigitalInIOCell_1
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_3
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_4
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_6
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_7
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_8
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_9
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_10
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_11
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_12
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_13
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_14
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_15
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_16
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_17
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_18
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_19
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_20
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_21
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_22
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_23
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_24
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_25
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_26
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_27
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_28
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_29
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_30
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_31
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_32
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_33
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_34
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_35
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_36
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_37
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_38
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_39
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalInIOCell_40
+                                  0.378000       1      0.378000  h
+ChipTop_GenericDigitalOutIOCell_0
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_1
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_3
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_4
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_5
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_6
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_7
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_8
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_9
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_10
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_11
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_12
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_13
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_14
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_15
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_16
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_17
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_18
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_19
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_20
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_21
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_22
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_23
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_24
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_25
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_26
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_27
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_28
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_29
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_30
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_31
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_32
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_33
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_34
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_35
+                                  0.630000       1      0.630000  h
+ChipTop_GenericDigitalOutIOCell_36
+                                  0.630000       1      0.630000  h
+ChipTop_ResetCatchAndSync_d3_0
+                                  9.702000       1      9.702000  h, n
+ChipTop_ResetSynchronizerShiftReg_w1_d3_i0_0
+                                  9.198000       1      9.198000  h, n
+INVD3BWP40P140     tcbn28hpcplusbwp40p140ssg0p81vm40c_ccs
+                                  0.504000       2      1.008000  
+INVD12BWP40P140    tcbn28hpcplusbwp40p140ssg0p81vm40c_ccs
+                                  1.638000       1      1.638000  
+INVD15BWP40P140    tcbn28hpcplusbwp40p140ssg0p81vm40c_ccs
+                                  2.016000       1      2.016000  
+SDFSNQD0BWP40P140  tcbn28hpcplusbwp40p140ssg0p81vm40c_ccs
+                                  2.898000       1      2.898000  n
+TIELBWP40P140      tcbn28hpcplusbwp40p140ssg0p81vm40c_ccs
+                                  0.252000       1      0.252000  
+-----------------------------------------------------------------------------
+Total 89 references                                 1244125.995173
+1

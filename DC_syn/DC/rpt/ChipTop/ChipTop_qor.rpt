@@ -1,0 +1,135 @@
+ 
+****************************************
+Report : qor
+Design : ChipTop
+Version: N-2017.09-SP3
+Date   : Mon Jun 26 15:30:16 2023
+****************************************
+
+
+  Timing Path Group '**clock_gating_default**'
+  -----------------------------------
+  Levels of Logic:            39.0000
+  Critical Path Length:        1.7270
+  Critical Path Slack:         0.0067
+  Critical Path Clk Period:    2.0000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+  Timing Path Group 'CLK_MCU'
+  -----------------------------------
+  Levels of Logic:            41.0000
+  Critical Path Length:        1.7712
+  Critical Path Slack:         0.0000
+  Critical Path Clk Period:    2.0000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:       -0.0076
+  Total Hold Violation:       -0.0076
+  No. of Hold Violations:      1.0000
+  -----------------------------------
+
+  Timing Path Group 'CLK_TCK'
+  -----------------------------------
+  Levels of Logic:             2.0000
+  Critical Path Length:        0.1878
+  Critical Path Slack:         0.0000
+  Critical Path Clk Period:   40.0000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+  Timing Path Group 'grp_INPUT'
+  -----------------------------------
+  Levels of Logic:            36.0000
+  Critical Path Length:        1.1447
+  Critical Path Slack:         0.0018
+  Critical Path Clk Period:    2.0000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+  Timing Path Group 'grp_OUTPUT'
+  -----------------------------------
+  Levels of Logic:            35.0000
+  Critical Path Length:        1.1993
+  Critical Path Slack:         0.0007
+  Critical Path Clk Period:    2.0000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:       2383
+  Hierarchical Port Count:      97283
+  Leaf Cell Count:             232372
+  Buf/Inv Cell Count:           30684
+  Buf Cell Count:               11268
+  Inv Cell Count:               19416
+  CT Buf/Inv Cell Count:            2
+  Combinational Cell Count:    188966
+  Sequential Cell Count:        43345
+  Macro Count:                     61
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     126175.5179
+  Noncombinational Area:  104402.0901
+  Buf/Inv Area:             9323.1180
+  Total Buffer Area:        4345.2359
+  Total Inverter Area:      4977.8821
+  Macro/Black Box Area:  1013548.3872
+  Net Area:                    0.0000
+  -----------------------------------
+  Cell Area:             1244125.9952
+  Design Area:           1244125.9952
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:        251404
+  Nets With Violations:             1
+  Max Trans Violations:             1
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: NEXTVPUSRV03
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                  0.3066
+  Logic Optimization:               29.4512
+  Mapping Optimization:            390.5398
+  -----------------------------------------
+  Overall Compile Time:            976.0496
+  Overall Compile Wall Clock Time: 607.5369
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.0000  TNS: 0.0000  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.0076  TNS: 0.0076  Number of Violating Paths: 1
+
+  --------------------------------------------------------------------
+
+
+1

@@ -1,0 +1,37 @@
+ 
+****************************************
+Report : area
+Design : ChipTop
+Version: N-2017.09-SP3
+Date   : Mon Jun 26 15:30:06 2023
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp40p140ssg0p81vm40c_ccs (File: /work/TECH_LIB/DATA/STD/tcbn28hpcplusbwp40p140_180b/Front_End/timing_power_noise/CCS/tcbn28hpcplusbwp40p140_180a/tcbn28hpcplusbwp40p140ssg0p81vm40c_ccs.db)
+    sad2lsph4s1p1024x44m4b1w0c0p0d0t0s10_lib (File: /work/SOC/zhulixin-soc/memory/pro_mem_20230619_wuan_db0625/compout/views/sad2lsph4s1p1024x44m4b1w0c0p0d0t0s10/tt0p9v25c/sad2lsph4s1p1024x44m4b1w0c0p0d0t0s10.db)
+    sad2lsph4s1p512x32m4b1w1c0p0d0t0s10_lib (File: /work/SOC/zhulixin-soc/memory/pro_mem_20230619_wuan_db0625/compout/views/sad2lsph4s1p512x32m4b1w1c0p0d0t0s10/tt0p9v25c/sad2lsph4s1p512x32m4b1w1c0p0d0t0s10.db)
+    sad2lsph4s1p64x21m4b1w1c0p0d0t0s10_lib (File: /work/SOC/zhulixin-soc/memory/pro_mem_20230619_wuan_db0625/compout/views/sad2lsph4s1p64x21m4b1w1c0p0d0t0s10/tt0p9v25c/sad2lsph4s1p64x21m4b1w1c0p0d0t0s10.db)
+    sad2lsph4s1p512x8m8b1w1c0p0d0t0s10_lib (File: /work/SOC/zhulixin-soc/memory/pro_mem_20230619_wuan_db0625/compout/views/sad2lsph4s1p512x8m8b1w1c0p0d0t0s10/tt0p9v25c/sad2lsph4s1p512x8m8b1w1c0p0d0t0s10.db)
+    sad2lsph4s1p64x22m4b1w1c0p0d0t0s10_lib (File: /work/SOC/zhulixin-soc/memory/pro_mem_20230619_wuan_db0625/compout/views/sad2lsph4s1p64x22m4b1w1c0p0d0t0s10/tt0p9v25c/sad2lsph4s1p64x22m4b1w1c0p0d0t0s10.db)
+    sad2lsph4s1p16384x64m16b4w0c1p0d0t0s10_lib (File: /work/SOC/zhulixin-soc/memory/pro_mem_20230619_wuan_db0625/compout/views/sad2lsph4s1p16384x64m16b4w0c1p0d0t0s10/tt0p9v25c/sad2lsph4s1p16384x64m16b4w0c1p0d0t0s10.db)
+    sad2lsph4s1p1024x17m8b1w1c0p0d0t0s10_lib (File: /work/SOC/zhulixin-soc/memory/pro_mem_20230619_wuan_db0625/compout/views/sad2lsph4s1p1024x17m8b1w1c0p0d0t0s10/tt0p9v25c/sad2lsph4s1p1024x17m8b1w1c0p0d0t0s10.db)
+
+Number of ports:                        97645
+Number of nets:                        338444
+Number of cells:                       240044
+Number of combinational cells:         188966
+Number of sequential cells:             48634
+Number of macros/black boxes:              61
+Number of buf/inv:                      30684
+Number of references:                      89
+
+Combinational area:             126175.517879
+Buf/Inv area:                     9323.117979
+Noncombinational area:          104402.090087
+Macro/Black Box area:          1013548.387207
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:               1244125.995173
+Total area:                 undefined
+1

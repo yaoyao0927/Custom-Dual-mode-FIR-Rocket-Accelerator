@@ -1,0 +1,74 @@
+#!/usr/bin/perl -w
+
+use strict;
+use Getopt::Long;
+
+my %opt =
+(
+	top => '',
+);
+
+my @options =
+qw(
+	help|h
+	top|t=s
+	cell|c=s
+);
+
+Getopt::Long::GetOptions(\%opt,@options);
+
+if($opt{help})
+{
+	print "\nUsage  \t: run [options]\n";
+	print "-h Use this option to print the help information\"\n";
+	print "-t <top name>\n";
+	print "   Use this option to set the \"top name\"\n";
+	print "-c <LIB>\n";
+	print "   Use this option to set the \"7T or 9T\"\n";
+	exit;
+}
+
+my $top  = $opt{top};
+my $cell = $opt{cell};
+my $restore =0;
+
+system ("echo $top");
+
+#if (!(-e "../run")) {
+#    mkdir "../run",0755 or die "Error: cant create ../run directory:$!";
+#}
+if (!(-e "../log")) {
+    mkdir "../log",0755 or die "Error: cant create ../log directory:$!";
+}
+if (!(-e "../rpt")) {
+    mkdir "../rpt",0755 or die "Error: cant create ../rpt directory:$!";
+}
+if (!(-e "../svf")) {
+    mkdir "../svf",0755 or die "Error: cant create ../svf directory:$!";
+}
+if (!(-e "../ddc")) {
+    mkdir "../ddc",0755 or die "Error: cant create ../ddc directory:$!";
+}
+if (!(-e "../netlist")) {
+    mkdir "../netlist",0755 or die "Error: cant create ../netlist directory:$!";
+}
+if (!(-e "../run/${top}")) {
+    mkdir "../run/${top}",0755 or die "Error: cant create ../run/${top} directory:$!";
+}
+if (!(-e "../rpt/${top}")) {
+    mkdir "../rpt/${top}",0755 or die "Error: cant create ../rpt/${top} directory:$!";
+}
+
+chdir "../run/${top}" or die "Cant chdir to ../run/${top}:$!";
+system ("rm * -rf");
+
+system ("cp ../../scr/main.tcl .");
+system ("sed -i 's/TOP_NAME/${top}/g' main.tcl");
+system ("sed -i 's/lib LIB_7T/lib LIB_${cell}/g' main.tcl");
+my $DC_SHELL = "/home/tol/sns/syn/2017.09-SP3/bin/dc_shell-t";
+if ($restore == "1") {
+    system ("$DC_SHELL -64 -f ./main.tcl  | tee ../../log/${top}_link.log");
+} else {
+    system ("$DC_SHELL -64 -f ./main.tcl  | tee ../../log/${top}.log");
+}
+

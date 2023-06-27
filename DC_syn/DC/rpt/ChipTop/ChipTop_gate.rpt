@@ -1,0 +1,2088 @@
+ 
+****************************************
+Report : clock_gating
+Design : ChipTop
+Version: N-2017.09-SP3
+Date   : Mon Jun 26 15:30:18 2023
+****************************************
+
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |     1727         |
+          |                                       |                  |
+          |    Number of Gated registers          | 40611 (97.58%)   |
+          |                                       |                  |
+          |    Number of Ungated registers        |  1006 (2.42%)    |
+          |                                       |                  |
+          |    Total number of registers          |    41617         |
+          ------------------------------------------------------------
+
+
+
+1
+ 
+****************************************
+Report : clock_gating
+        -ungated
+Design : ChipTop
+Version: N-2017.09-SP3
+Date   : Mon Jun 26 15:30:19 2023
+****************************************
+
+
+--------------------------------------------------------------------------------
+                             Ungated Register Report
+--------------------------------------------------------------------------------
+           Ungated Register     |  Reason                  |  What Next?
+--------------------------------------------------------------------------------
+    clock_en_reg                |  Always enabled register |  -
+    system/int_rtc_tick_value_reg_0
+                                |  Always enabled register |  -
+    system/int_rtc_tick_value_reg_4
+                                |  Min bitwidth not met    |  -
+    system/int_rtc_tick_value_reg_2
+                                |  Min bitwidth not met    |  -
+    system/int_rtc_tick_value_reg_3
+                                |  Min bitwidth not met    |  -
+    system/int_rtc_tick_value_reg_1
+                                |  Min bitwidth not met    |  -
+    system/int_rtc_tick_value_reg_6
+                                |  Min bitwidth not met    |  -
+    system/int_rtc_tick_value_reg_5
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/state_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/state_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/clint/ipi_0_reg      |  Min bitwidth not met    |  -
+    system/dtm/stickyNonzeroRespReg_reg
+                                |  Min bitwidth not met    |  -
+    system/dtm/busyReg_reg      |  Min bitwidth not met    |  -
+    system/dtm/dmiReqValidReg_reg
+                                |  Min bitwidth not met    |  -
+    system/dtm/downgradeOpReg_reg
+                                |  Cant find enable condition
+                                                           |  -
+    system/dtm/stickyBusyReg_reg
+                                |  Min bitwidth not met    |  -
+    debug_reset_syncd_debug_reset_sync/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    debug_reset_syncd_debug_reset_sync/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    debug_reset_syncd_debug_reset_sync/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    dmactiveAck_dmactiveAck/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    dmactiveAck_dmactiveAck/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    dmactiveAck_dmactiveAck/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/subsystem_sbus/system_bus_xbar/state_2_0_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_sbus/system_bus_xbar/state_1_0_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_sbus/system_bus_xbar/state_1_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_sbus/system_bus_xbar/state_2_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_sbus/system_bus_xbar/state_3_0_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_sbus/system_bus_xbar/state_3_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_sbus/system_bus_xbar/state_0_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_sbus/system_bus_xbar/state_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/out_xbar/state_0_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/out_xbar/beatsLeft_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/out_xbar/readys_mask_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/out_xbar/state_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/out_xbar/beatsLeft_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/out_xbar/beatsLeft_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/atomics/beatsLeft_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/atomics/beatsLeft_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/atomics/beatsLeft_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/atomics/cam_s_0_state_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/atomics/cam_s_0_state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/atomics/d_first_counter_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/atomics/d_first_counter_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/atomics/d_first_counter_reg_2
+                                |  Cant find enable condition
+                                                           |  -
+    system/subsystem_pbus/atomics/state_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/atomics/state_0_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/in_xbar/state_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/in_xbar/state_0_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/atomics/cam_s_0_state_reg_1
+                                |  Cannot find an enable condition
+                                                           |  -
+    system/subsystem_cbus/atomics/cam_s_0_state_reg_0
+                                |  Cannot find an enable condition
+                                                           |  -
+    system/subsystem_cbus/atomics/state_0_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/atomics/state_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_mbus/subsystem_mbus_xbar/beatsLeft_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_mbus/subsystem_mbus_xbar/readys_mask_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_mbus/subsystem_mbus_xbar/state_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_mbus/subsystem_mbus_xbar/state_0_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_mbus/subsystem_mbus_xbar/beatsLeft_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_mbus/subsystem_mbus_xbar/beatsLeft_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/flushOutValid_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/flushInValid_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/beatsLeft_1_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/d_first_counter_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/d_first_counter_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/beatsLeft_1_reg_2
+                                |  Cannot find an enable condition
+                                                           |  -
+    system/subsystem_l2_wrapper/cork/state_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/beatsLeft_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/beatsLeft_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/state_0_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/d_first_counter_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/state_1_2_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/state_1_0_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/state_1_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/beatsLeft_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/beatsLeft_1_reg_1
+                                |  Min bitwidth not met    |  -
+    system/plicDomainWrapper/plic/maxDevs_1_reg
+                                |  Always enabled register |  -
+    system/plicDomainWrapper/plic/maxDevs_0_reg
+                                |  Always enabled register |  -
+    system/plicDomainWrapper/plic/bundleOut_0_0_REG_reg
+                                |  Always enabled register |  -
+    system/plicDomainWrapper/plic/bundleOut_1_0_REG_reg
+                                |  Always enabled register |  -
+    system/plicDomainWrapper/plic/priority_0_reg
+                                |  Min bitwidth not met    |  -
+    system/plicDomainWrapper/plic/threshold_1_reg
+                                |  Min bitwidth not met    |  -
+    system/plicDomainWrapper/plic/enables_0_0_reg
+                                |  Min bitwidth not met    |  -
+    system/plicDomainWrapper/plic/enables_1_0_reg
+                                |  Min bitwidth not met    |  -
+    system/plicDomainWrapper/plic/pending_0_reg
+                                |  Min bitwidth not met    |  -
+    system/plicDomainWrapper/plic/threshold_0_reg
+                                |  Min bitwidth not met    |  -
+    system/intsource/reg0/reg_reg_0
+                                |  Always enabled register |  -
+    system/intsource/reg0/reg_reg_1
+                                |  Always enabled register |  -
+    system/intsource_1/reg0/reg_reg
+                                |  Always enabled register |  -
+    system/intsource_2/reg0/reg_reg
+                                |  Always enabled register |  -
+    system/uartClockDomainWrapper/uart_0/nstop_reg
+                                |  Min bitwidth not met    |  -
+    system/uartClockDomainWrapper/uart_0/rxen_reg
+                                |  Min bitwidth not met    |  -
+    system/uartClockDomainWrapper/uart_0/ie_txwm_reg
+                                |  Min bitwidth not met    |  -
+    system/uartClockDomainWrapper/uart_0/ie_rxwm_reg
+                                |  Min bitwidth not met    |  -
+    system/uartClockDomainWrapper/uart_0/txen_reg
+                                |  Min bitwidth not met    |  -
+    system/dtm/tapIO_controllerInternal/tdoReg_reg
+                                |  Always enabled register |  -
+    system/dtm/tapIO_bypassChain/reg_reg
+                                |  Min bitwidth not met    |  -
+    system_debug_systemjtag_reset_catcher/io_sync_reset_chain/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system_debug_systemjtag_reset_catcher/io_sync_reset_chain/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system_debug_systemjtag_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/subsystem_pbus/buffer/bundleOut_0_a_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/buffer/bundleOut_0_a_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/buffer/bundleOut_0_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/buffer/bundleIn_0_d_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/buffer/bundleIn_0_d_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/buffer/bundleIn_0_d_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/buffer_1/bundleOut_0_a_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/buffer_1/bundleOut_0_a_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/buffer_1/bundleOut_0_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/buffer_1/bundleIn_0_d_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/buffer_1/bundleIn_0_d_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/buffer_1/bundleIn_0_d_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_slave_named_bootaddressreg/fragmenter/acknum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_slave_named_bootaddressreg/fragmenter/acknum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_slave_named_bootaddressreg/fragmenter/acknum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_slave_named_bootaddressreg/fragmenter/gennum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_slave_named_bootaddressreg/fragmenter/gennum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_slave_named_bootaddressreg/fragmenter/gennum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_slave_named_bootaddressreg/fragmenter/dOrig_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_slave_named_bootaddressreg/fragmenter/dOrig_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_slave_named_bootaddressreg/fragmenter/dOrig_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_device_named_uart_0/fragmenter/gennum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_device_named_uart_0/fragmenter/dOrig_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_device_named_uart_0/fragmenter/acknum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_device_named_uart_0/fragmenter/acknum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_device_named_uart_0/fragmenter/acknum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_device_named_uart_0/fragmenter/gennum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_device_named_uart_0/fragmenter/gennum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_device_named_uart_0/fragmenter/dOrig_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_device_named_uart_0/fragmenter/dOrig_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_fbus/buffer/bundleOut_0_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_fbus/buffer/bundleOut_0_a_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_fbus/buffer/bundleOut_0_a_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_fbus/buffer/bundleIn_0_d_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_fbus/buffer/bundleIn_0_d_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_fbus/buffer/bundleIn_0_d_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/buffer/bundleOut_0_a_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/buffer/bundleOut_0_a_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/buffer/bundleOut_0_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/buffer/bundleIn_0_d_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/buffer/bundleIn_0_d_q/value_1_reg
+                                |  Always enabled register |  -
+    system/subsystem_cbus/buffer/bundleIn_0_d_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_l2_ctrl/fragmenter/acknum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_l2_ctrl/fragmenter/acknum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_l2_ctrl/fragmenter/acknum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_l2_ctrl/fragmenter/gennum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_l2_ctrl/fragmenter/gennum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_l2_ctrl/fragmenter/gennum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_l2_ctrl/fragmenter/dOrig_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_l2_ctrl/fragmenter/dOrig_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_l2_ctrl/fragmenter/dOrig_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_plic/fragmenter/dOrig_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_plic/fragmenter/acknum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_plic/fragmenter/acknum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_plic/fragmenter/acknum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_plic/fragmenter/gennum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_plic/fragmenter/gennum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_plic/fragmenter/gennum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_plic/fragmenter/dOrig_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_plic/fragmenter/dOrig_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_clint/fragmenter/acknum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_clint/fragmenter/acknum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_clint/fragmenter/acknum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_clint/fragmenter/gennum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_clint/fragmenter/gennum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_clint/fragmenter/gennum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_clint/fragmenter/dOrig_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_clint/fragmenter/dOrig_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_clint/fragmenter/dOrig_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_debug/fragmenter/gennum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_debug/fragmenter/acknum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_debug/fragmenter/acknum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_debug/fragmenter/acknum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_debug/fragmenter/gennum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_debug/fragmenter/gennum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_debug/fragmenter/dOrig_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_debug/fragmenter/dOrig_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_debug/fragmenter/dOrig_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/fragmenter/acknum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/fragmenter/acknum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/fragmenter/acknum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/fragmenter/gennum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/fragmenter/gennum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/fragmenter/gennum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/fragmenter/dOrig_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/fragmenter/dOrig_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/fragmenter/dOrig_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/fragmenter/dOrig_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/fragmenter/acknum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/fragmenter/acknum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/fragmenter/acknum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/fragmenter/gennum_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/fragmenter/gennum_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/fragmenter/gennum_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/fragmenter/dOrig_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/fragmenter/dOrig_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_mbus/coupler_to_memory_controller_port_named_axi4/tl2axi4/r_denied_r_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_mbus/coupler_to_memory_controller_port_named_axi4/tl2axi4/b_delay_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_mbus/coupler_to_memory_controller_port_named_axi4/tl2axi4/b_delay_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_mbus/coupler_to_memory_controller_port_named_axi4/tl2axi4/b_delay_reg_0
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/out_back/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/directoryFanout_reg_0
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/directoryFanout_reg_6
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/directoryFanout_reg_1
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/directoryFanout_reg_2
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/directoryFanout_reg_5
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/directoryFanout_reg_4
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/directoryFanout_reg_3
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/InclusiveCache_inner_TLBuffer/bundleOut_0_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/InclusiveCache_inner_TLBuffer/bundleIn_0_d_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/q/ram_source_reg_1_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/q/ram_source_reg_1_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/q/ram_source_reg_1_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/q/ram_source_reg_0_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/q/ram_source_reg_0_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/q/ram_source_reg_0_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/q_1/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/q_1/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/cork/q_1/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_a_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_a_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleIn_0_d_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleIn_0_d_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleIn_0_d_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleIn_0_b_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleIn_0_b_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleIn_0_b_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_c_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_c_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_c_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_e_q/value_1_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_e_q/ram_sink_reg_0_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_e_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_e_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_e_q/ram_sink_reg_0_2
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_e_q/ram_sink_reg_0_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_e_q/ram_sink_reg_1_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_e_q/ram_sink_reg_1_2
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/buffer_1/bundleOut_0_e_q/ram_sink_reg_1_1
+                                |  Min bitwidth not met    |  -
+    system/plicDomainWrapper/plic/gateways_gateway/inFlight_reg
+                                |  Min bitwidth not met    |  -
+    system/plicDomainWrapper/plic/out_back/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/dmiXbar/readys_mask_reg_0
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/dmiXbar/readys_mask_reg_1
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/dmOuter/innerCtrlAckHaveResetReg_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/dmOuter/innerCtrlResumeReqReg_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/dmOuter/innerCtrlValidReg_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/widx_gray_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/mem_0_hrmask_0_reg
+                                |  Cant find enable condition
+                                                           |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/widx_widx_bin_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/mem_0_resumereq_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/mem_0_ackhavereset_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/ready_reg_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmInner/ABSTRACTCSReg_cmderr_reg_1
+                                |  Cannot find an enable condition
+                                                           |  -
+    system/debug_1/dmInner/dmInner/ABSTRACTCSReg_cmderr_reg_2
+                                |  Cannot find an enable condition
+                                                           |  -
+    system/debug_1/dmInner/dmInner/ctrlStateReg_reg_0
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmInner/ctrlStateReg_reg_1
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmInner/goReg_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmInner/haltedBitRegs_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmInner/haveResetBitRegs_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmInner/hrDebugIntReg_0_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmInner/hrmaskReg_0_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmInner/resumeReqRegs_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmInner/ABSTRACTCSReg_cmderr_reg_0
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/ridx_gray_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/valid_reg_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/ridx_ridx_bin_reg
+                                |  Min bitwidth not met    |  -
+    system/domain/serdesser/outArb/lockIdx_reg_2
+                                |  Min bitwidth not met    |  -
+    system/domain/serdesser/outArb/locked_reg
+                                |  Min bitwidth not met    |  -
+    system/domain/serdesser/outArb/lockIdx_reg_0
+                                |  Min bitwidth not met    |  -
+    system/domain/serdesser/outSer/sendCount_reg_0
+                                |  Min bitwidth not met    |  -
+    system/domain/serdesser/outSer/sendCount_reg_1
+                                |  Min bitwidth not met    |  -
+    system/domain/serdesser/outSer/sending_reg
+                                |  Min bitwidth not met    |  -
+    system/domain/serdesser/inDes/recvCount_reg_0
+                                |  Min bitwidth not met    |  -
+    system/domain/serdesser/inDes/recvCount_reg_1
+                                |  Min bitwidth not met    |  -
+    system/domain/serdesser/inDes/receiving_reg
+                                |  Min bitwidth not met    |  -
+    system/domain/buffer/bundleOut_0_a_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/domain/buffer/bundleOut_0_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/domain/buffer/bundleOut_0_a_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/domain/buffer/bundleIn_0_d_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/domain/buffer/bundleIn_0_d_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/domain/buffer/bundleIn_0_d_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/uartClockDomainWrapper/uart_0/txq/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/uartClockDomainWrapper/uart_0/rxm/valid_reg
+                                |  Always enabled register |  -
+    system/uartClockDomainWrapper/uart_0/rxm/debounce_reg_1
+                                |  Min bitwidth not met    |  -
+    system/uartClockDomainWrapper/uart_0/rxm/state_reg
+                                |  Min bitwidth not met    |  -
+    system/uartClockDomainWrapper/uart_0/rxm/debounce_reg_0
+                                |  Min bitwidth not met    |  -
+    system/uartClockDomainWrapper/uart_0/rxq/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/prci_ctrl_domain/tileClockGater/regs_0/reg_reg
+                                |  Min bitwidth not met    |  -
+    system/prci_ctrl_domain/tileClockGater/regs_1/reg_reg
+                                |  Min bitwidth not met    |  -
+    system/prci_ctrl_domain/tileClockGater/regs_2/reg_reg
+                                |  Min bitwidth not met    |  -
+    system/prci_ctrl_domain/tileClockGater/regs_3/reg_reg
+                                |  Min bitwidth not met    |  -
+    system/prci_ctrl_domain/tileClockGater/regs_4/reg_reg
+                                |  Min bitwidth not met    |  -
+    system/prci_ctrl_domain/tileClockGater/regs_5/reg_reg
+                                |  Min bitwidth not met    |  -
+    system/prci_ctrl_domain/tileClockGater/regs_6/reg_reg
+                                |  Min bitwidth not met    |  -
+    system/dtm/tapIO_controllerInternal/stateMachine/currState_reg_0
+                                |  Min bitwidth not met    |  -
+    system/dtm/tapIO_controllerInternal/stateMachine/currState_reg_3
+                                |  Min bitwidth not met    |  -
+    system/dtm/tapIO_controllerInternal/stateMachine/currState_reg_2
+                                |  Min bitwidth not met    |  -
+    system/dtm/tapIO_controllerInternal/stateMachine/currState_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_pbus/coupler_to_slave_named_bootaddressreg/fragmenter/repeater/full_reg
+                                |  Always enabled register |  -
+    system/subsystem_pbus/coupler_to_device_named_uart_0/fragmenter/repeater/full_reg
+                                |  Always enabled register |  -
+    system/subsystem_fbus/coupler_from_port_named_serial_tl_ctrl/buffer/bundleOut_0_a_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_fbus/coupler_from_port_named_serial_tl_ctrl/buffer/bundleOut_0_a_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_fbus/coupler_from_port_named_serial_tl_ctrl/buffer/bundleOut_0_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_fbus/coupler_from_port_named_serial_tl_ctrl/buffer/bundleIn_0_d_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_fbus/coupler_from_port_named_serial_tl_ctrl/buffer/bundleIn_0_d_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_fbus/coupler_from_port_named_serial_tl_ctrl/buffer/bundleIn_0_d_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/wrapped_error_device/error/a/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/wrapped_error_device/buffer/bundleOut_0_a_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/wrapped_error_device/buffer/bundleOut_0_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/wrapped_error_device/buffer/bundleOut_0_a_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/wrapped_error_device/buffer/bundleIn_0_d_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/wrapped_error_device/buffer/bundleIn_0_d_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/wrapped_error_device/buffer/bundleIn_0_d_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_l2_ctrl/buffer/bundleOut_0_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_l2_ctrl/buffer/bundleIn_0_d_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_l2_ctrl/fragmenter/repeater/full_reg
+                                |  Cant find enable condition
+                                                           |  -
+    system/subsystem_cbus/coupler_to_plic/fragmenter/repeater/full_reg
+                                |  Cant find enable condition
+                                                           |  -
+    system/subsystem_cbus/coupler_to_clint/fragmenter/repeater/full_reg
+                                |  Always enabled register |  -
+    system/subsystem_cbus/coupler_to_debug/fragmenter/repeater/full_reg
+                                |  Always enabled register |  -
+    system/subsystem_cbus/coupler_to_bootrom/fragmenter/repeater/full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/buffer/bundleOut_0_a_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/buffer/bundleOut_0_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/buffer/bundleOut_0_a_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/buffer/bundleIn_0_d_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/buffer/bundleIn_0_d_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/buffer/bundleIn_0_d_q/value_1_reg
+                                |  Always enabled register |  -
+    system/subsystem_cbus/coupler_to_slave_named_clockgater/fragmenter/repeater/full_reg
+                                |  Cant find enable condition
+                                                           |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/buffer/bundleOut_0_a_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/buffer/bundleOut_0_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/buffer/bundleOut_0_a_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/buffer/bundleIn_0_d_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/buffer/bundleIn_0_d_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/buffer/bundleIn_0_d_q/value_1_reg
+                                |  Always enabled register |  -
+    system/subsystem_cbus/coupler_to_slave_named_tileresetsetter/fragmenter/repeater/full_reg
+                                |  Cant find enable condition
+                                                           |  -
+    system/subsystem_mbus/coupler_to_memory_controller_port_named_axi4/tl2axi4/deq/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_mbus/coupler_to_memory_controller_port_named_axi4/tl2axi4/queue_arw_deq/maybe_full_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceB/remain_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceC/s2_valid_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceC/s3_valid_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceC/beat_reg_0
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceC/beat_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceC/beat_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceC/busy_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/queue_io_enq_valid_REG_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/queue_io_enq_valid_REG_1_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s1_latch_bypass_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_24
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_25
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_26
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_27
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_28
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_29
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_30
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_31
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_32
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_33
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_34
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_35
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_36
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_37
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_38
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_39
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_40
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_41
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_42
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_43
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_44
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_45
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_46
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_47
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_48
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_49
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_50
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_51
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_52
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_53
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_54
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_55
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_56
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_57
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_58
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_59
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_60
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_61
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_62
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_63
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_valid_d_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_2
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_17
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/busy_reg
+                                |  Cannot find an enable condition
+                                                           |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s1_bypass_r_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s1_block_r_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s1_counter_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s1_counter_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s1_counter_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s2_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s2_valid_pb_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s4_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_4
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_20
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_0
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_1
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_3
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_5
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_6
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_7
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_8
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_9
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_10
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_11
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_12
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_13
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_14
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_15
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_16
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_18
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_19
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_21
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_22
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/s3_bypass_data_REG_1_reg_23
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkA/first_counter_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkA/first_counter_reg_1
+                                |  Cant find enable condition
+                                                           |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkA/first_counter_reg_2
+                                |  Cant find enable condition
+                                                           |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkC/put_r_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkC/counter_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkC/counter_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkC/counter_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkC/lists_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkC/lists_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkD/counter_reg_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkD/counter_reg_0
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkD/counter_reg_1
+                                |  Cant find enable condition
+                                                           |  -
+    system/subsystem_l2_wrapper/l2/mods_0/directory/wipeOff_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regout_REG_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regout_REG_1_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regout_REG_2_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regout_REG_3_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceC_REG_reg_3
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceC_REG_reg_2
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceC_REG_reg_1
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceC_REG_reg_0
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceD_REG_reg_3
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceD_REG_reg_2
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceD_REG_reg_1
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceD_REG_reg_0
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceC_reg_3
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceC_reg_2
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceC_reg_1
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceC_reg_0
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceD_reg_3
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceD_reg_2
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceD_reg_1
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bankedStore/regsel_sourceD_reg_0
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/w_grantack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/meta_dirty_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/meta_state_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/meta_state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/probes_toN_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/request_valid_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/gotT_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/bad_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/meta_hit_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/w_rprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/w_pprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/w_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/w_releaseack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/w_grantlast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/w_grantfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/w_rprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/w_pprobeack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_0/w_pprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/meta_state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/w_grantack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/meta_hit_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/meta_dirty_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/meta_state_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/probes_toN_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/request_valid_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/gotT_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/bad_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/w_pprobeack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/w_grantlast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/w_grantfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/w_pprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/w_rprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/w_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/w_releaseack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/w_rprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_1/w_pprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/w_grantack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/meta_hit_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/gotT_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/meta_state_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/probes_toN_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/request_valid_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/bad_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/w_pprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/w_grantlast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/meta_state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/w_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/w_pprobeack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/w_grantfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/w_rprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/meta_dirty_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/w_rprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/w_pprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_2/w_releaseack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/meta_dirty_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/meta_state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/w_pprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/probes_toN_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/meta_hit_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/w_grantack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/meta_state_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/request_valid_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/gotT_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/bad_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/w_rprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/w_pprobeack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/w_grantlast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/w_releaseack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/w_grantfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/w_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/w_pprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_3/w_rprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/bad_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/meta_hit_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/meta_dirty_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/meta_state_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/probes_toN_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/request_valid_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/gotT_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/w_pprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/w_grantack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/w_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/w_pprobeack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/w_rprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/meta_state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/w_grantlast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/w_releaseack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/w_rprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/w_grantfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/abc_mshrs_4/w_pprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/w_grantack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/meta_hit_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/bad_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/w_releaseack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/meta_dirty_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/meta_state_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/meta_state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/probes_toN_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/gotT_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/w_grantfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/w_pprobeack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/request_valid_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/w_pprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/w_rprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/w_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/w_grantlast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/w_pprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/bc_mshr/w_rprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/w_grantack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/request_valid_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/meta_dirty_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/meta_hit_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/meta_state_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/meta_state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/probes_toN_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/gotT_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/bad_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/w_rprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/w_grant_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/w_grantlast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/w_pprobeacklast_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/w_rprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/w_pprobeackfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/w_releaseack_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/w_grantfirst_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/c_mshr/w_pprobeack_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/tlMasterXbar/state_1_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/tlMasterXbar/state_0_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/REG_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/doUncachedResp_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/blockProbeAfterGrantCount_reg_0
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/s2_not_nacked_in_s1_reg
+                                |  Cannot find an enable condition
+                                                           |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/s1_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/io_cpu_s2_xcpt_REG_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/s2_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/pstore_drain_on_miss_REG_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/s1_release_data_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/s2_release_data_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/release_state_reg_0
+                                |  Cannot find an enable condition
+                                                           |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/release_state_reg_1
+                                |  Cannot find an enable condition
+                                                           |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/s1_probe_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/s2_probe_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/blockProbeAfterGrantCount_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/blockProbeAfterGrantCount_reg_2
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/blockUncachedGrant_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/cached_grant_wait_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/pstore1_held_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/release_ack_wait_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/resetting_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/uncachedInFlight_0_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/pstore2_valid_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/release_state_reg_2
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/firAccel/busy_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/firAccel/canResp_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/firAccel/rs1Enable_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/fq_io_enq_valid_REG_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s2_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_38
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_37
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_36
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_35
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_34
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_33
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_32
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_31
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_30
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_29
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_28
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_27
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_26
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_25
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_24
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_23
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_22
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_21
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_20
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_19
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_18
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_17
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_16
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_15
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_14
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_1
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_speculative_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s2_replay_REG_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/wrong_path_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_11
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_4
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_6
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_9
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_8
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_3
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_12
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_5
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_7
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_10
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_2
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_39
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s2_partial_insn_valid_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/s1_pc_reg_13
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/ex_reg_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/load_wb_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/mem_reg_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/wb_reg_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/wen_reg_2
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/wen_reg_1
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/wen_reg_0
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/io_sboard_set_REG_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/wb_ctrl_toint_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/wb_toint_exc_reg_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/divSqrt_killed_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/wb_toint_exc_reg_4
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcacheArb/s1_id_reg_1
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcacheArb/s2_id_reg_1
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_63
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_62
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_61
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_60
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_59
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_58
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_57
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_56
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_55
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_54
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_53
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_52
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_51
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_50
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_49
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_48
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_47
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_46
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_45
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_44
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_43
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_42
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_41
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_40
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_39
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_38
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_37
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_36
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_35
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_34
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_33
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_32
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_31
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_30
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_7
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_6
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_5
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_4
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_3
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_2
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_1
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_0
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/l2_refill_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/s1_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/s2_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/state_reg_0
+                                |  Cannot find an enable condition
+                                                           |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/resp_valid_1_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/resp_valid_0_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_29
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_28
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_27
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_26
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_25
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_24
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_23
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_22
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_21
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_20
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_19
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_18
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_17
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_16
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_15
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_14
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_13
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_12
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_11
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/mem_resp_data_reg_10
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/resp_ae_ptw_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/invalidated_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/state_reg_2
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/ptw/count_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/respArb_io_in_0_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/respArb_io_in_0_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/respArb_io_in_0_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/div_io_kill_REG_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/ex_reg_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/ex_reg_replay_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/wb_reg_flush_pipe_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/wb_reg_replay_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/ex_reg_xcpt_interrupt_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/mem_reg_xcpt_interrupt_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/mem_reg_replay_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/wb_reg_xcpt_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/ex_reg_xcpt_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/mem_reg_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/wb_reg_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/id_reg_pause_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/blocked_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/id_reg_fence_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/mem_reg_sfence_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/mem_reg_xcpt_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/rocc_blocked_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/intsink/chain/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/intsink/chain/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/intsink/chain/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/dmiBypass/bar/in_reset_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/dmiBypass/bar/flight_reg_1
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/dmiBypass/bar/bypass_reg_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/dmiBypass/bar/flight_reg_0
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/widx_gray_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/ready_reg_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/widx_widx_bin_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/ridx_gray_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/valid_reg_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/ridx_ridx_bin_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/dmactiveAck_dmactiveAckSync/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/dmactiveAck_dmactiveAckSync/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/dmactiveAck_dmactiveAckSync/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/ridx_gray_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/ridx_ridx_bin_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/valid_reg_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/widx_gray_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/ready_reg_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/widx_widx_bin_reg
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmactive_synced_dmactive_synced_dmactiveSync/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmactive_synced_dmactiveSync/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmactive_synced_dmactiveSync/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/io_deq_bits_deq_bits_reg/cdc_reg_reg_14
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/io_deq_bits_deq_bits_reg/cdc_reg_reg_0
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/io_deq_bits_deq_bits_reg/cdc_reg_reg_3
+                                |  Min bitwidth not met    |  -
+    system/uartClockDomainWrapper/uart_0/intsource/reg0/reg_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_sbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_sbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_sbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_sbus_1_reset_catcher/io_sync_reset_chain/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_sbus_1_reset_catcher/io_sync_reset_chain/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_sbus_1_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_pbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_pbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_pbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_fbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_fbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_fbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_mbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_mbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_mbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_cbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_cbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_cbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_implicit_clock_reset_catcher/io_sync_reset_chain/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_implicit_clock_reset_catcher/io_sync_reset_chain/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/resetSynchronizer/bundleOut_0_member_allClocks_implicit_clock_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceA/io_a_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceA/io_a_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceA/io_a_q/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceC/queue/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/queue/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/queue/deq_ptr_value_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/queue/deq_ptr_value_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/queue/enq_ptr_value_reg_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceD/queue/enq_ptr_value_reg_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceE/io_e_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceE/io_e_q/ram_sink_reg_0_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceE/io_e_q/ram_sink_reg_0_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceE/io_e_q/ram_sink_reg_0_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceE/io_e_q/ram_sink_reg_1_0
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceE/io_e_q/ram_sink_reg_1_2
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceE/io_e_q/ram_sink_reg_1_1
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceE/io_e_q/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceE/io_e_q/value_1_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sourceX/io_x_q/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkC/c/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkC/c/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkC/c/value_1_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkC/io_bs_adr_q/maybe_full_reg
+                                |  Always enabled register |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkD/d/value_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkD/d/value_1_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkD/d/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/sinkX/x/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/subsystem_l2_wrapper/l2/mods_0/directory/write/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/tlb/state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/tlb/special_entry_valid_0_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/dcache/tlb/state_reg_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/firAccel/FIR/state_reg_reg_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/firAccel/FIR/state_reg_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/firAccel/FIR/state_reg_reg_2
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/icache/s1_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/icache/s2_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/icache/s2_hit_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/icache/s2_request_refill_REG_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/icache/invalidated_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/icache/refill_valid_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/fq/valid_2_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/fq/valid_0_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/fq/valid_4_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/fq/valid_3_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/fq/valid_1_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/tlb/special_entry_valid_0_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/tlb/state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/tlb/state_reg_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/btb/r_respPipe_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/btb/r_btb_updatePipe_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/btb/pos_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/btb/pos_reg_2
+                                |  Cant find enable condition
+                                                           |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/btb/count_reg_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/btb/count_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/btb/count_reg_2
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/frontend/btb/pos_reg_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/sfma/valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/ifpu/inPipe_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/fpmu/inPipe_valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/dfma/valid_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/cmdRouter/cmd/value_1_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/cmdRouter/cmd/value_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/cmdRouter/cmd/maybe_full_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/ibuf/nBufValid_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_fflags_reg_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_fflags_reg_2
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_dcsr_cause_reg_2
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/io_status_cease_r_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_dcsr_prv_reg_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_mstatus_prv_reg_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_mstatus_spie_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_singleStepped_reg
+                                |  Cant find enable condition
+                                                           |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_wfi_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_dcsr_cause_reg_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_dcsr_cause_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_satp_mode_reg_3
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_custom_0_reg_9
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_custom_0_reg_3
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_fflags_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_fflags_reg_3
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_fflags_reg_4
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_mstatus_mprv_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_mstatus_prv_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_dcsr_prv_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_mstatus_spp_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_mstatus_sie_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/csr/reg_debug_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/div/state_reg_0
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/div/state_reg_1
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/core/div/state_reg_2
+                                |  Min bitwidth not met    |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/ridx_ridx_gray/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/ridx_ridx_gray/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/ridx_ridx_gray/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmInner/hartIsInResetSync_0_debug_hartReset_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmInner/hartIsInResetSync_0_debug_hartReset_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmInner/hartIsInResetSync_0_debug_hartReset_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/widx_widx_gray/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/widx_widx_gray/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/widx_widx_gray/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/sfma/fma/valid_stage0_v_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/dfma/fma/valid_stage0_v_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/dfma/fma/io_validout_v_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/ridx_ridx_gray/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/ridx_ridx_gray/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/ridx_ridx_gray/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/widx_widx_gray/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/widx_widx_gray/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/widx_widx_gray/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/source_valid_0/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/source_valid_0/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/source_valid_0/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/source_valid_1/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/source_valid_1/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/source_valid_1/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/sink_extend/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/sink_extend/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/sink_extend/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/sink_valid/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/sink_valid/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/io_innerCtrl_source/sink_valid/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/widx_widx_gray/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/widx_widx_gray/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/widx_widx_gray/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/ridx_ridx_gray/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/ridx_ridx_gray/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/ridx_ridx_gray/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/sink_valid_0/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/sink_valid_0/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/sink_valid_0/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/sink_valid_1/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/sink_valid_1/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/sink_valid_1/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/source_extend/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/source_extend/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/source_extend/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/source_valid/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/source_valid/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmactive_synced_dmInner_io_innerCtrl_sink/source_valid/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/divSqrt/divSqrtRecFNToRaw/divSqrtRawFN/inReady_reg
+                                |  Min bitwidth not met    |  -
+    system/tile_prci_domain/tile_reset_domain/tile/fpuOpt/divSqrt_1/divSqrtRecFNToRaw/divSqrtRawFN/inReady_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/source_valid_0/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/source_valid_0/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/source_valid_0/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/source_valid_1/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/source_valid_1/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/source_valid_1/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/sink_extend/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/sink_extend/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/sink_extend/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/sink_valid/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/sink_valid/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleOut_0_a_source/sink_valid/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/sink_valid_0/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/sink_valid_0/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/sink_valid_0/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/sink_valid_1/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/sink_valid_1/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/sink_valid_1/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/source_extend/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/source_extend/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/source_extend/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/source_valid/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/source_valid/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmOuter/asource/bundleIn_0_d_sink/source_valid/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/sink_valid_0/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/sink_valid_0/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/sink_valid_0/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/sink_valid_1/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/sink_valid_1/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/sink_valid_1/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/source_extend/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/source_extend/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/source_extend/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/source_valid/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/source_valid/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleOut_0_a_sink/source_valid/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/source_valid_0/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/source_valid_0/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/source_valid_0/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/source_valid_1/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/source_valid_1/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/source_valid_1/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/sink_extend/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/sink_extend/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/sink_extend/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/sink_valid/io_out_source_valid_0/output_chain/sync_2_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/sink_valid/io_out_source_valid_0/output_chain/sync_1_reg
+                                |  Always enabled register |  -
+    system/debug_1/dmInner/dmiXing/bundleIn_0_d_source/sink_valid/io_out_source_valid_0/output_chain/sync_0_reg
+                                |  Always enabled register |  -
+                                |                          |
+--------------------------------------------------------------------------------
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |     1727         |
+          |                                       |                  |
+          |    Number of Gated registers          | 40611 (97.58%)   |
+          |                                       |                  |
+          |    Number of Ungated registers        |  1006 (2.42%)    |
+          |                                       |                  |
+          |    Total number of registers          |    41617         |
+          ------------------------------------------------------------
+
+
+
+1
