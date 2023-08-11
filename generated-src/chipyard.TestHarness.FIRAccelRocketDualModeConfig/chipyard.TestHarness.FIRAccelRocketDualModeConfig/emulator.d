@@ -1,0 +1,22 @@
+emulator.o: \
+ /home/hmy/chipyard/sims/verilator/generated-src/chipyard.TestHarness.FIRAccelRocketDualModeConfig/emulator.cc \
+ /home/hmy/chipyard/sims/verilator/generated-src/chipyard.TestHarness.FIRAccelRocketDualModeConfig/chipyard.TestHarness.FIRAccelRocketDualModeConfig.plusArgs \
+ /home/hmy/chipyard/sims/verilator/generated-src/chipyard.TestHarness.FIRAccelRocketDualModeConfig/verilator.h \
+ /usr/local/share/verilator/include/verilated_vcd_c.h \
+ /usr/local/share/verilator/include/verilated.h \
+ /usr/local/share/verilator/include/verilatedos.h \
+ /usr/local/share/verilator/include/verilated_trace.h \
+ /home/hmy/chipyard/sims/verilator/generated-src/chipyard.TestHarness.FIRAccelRocketDualModeConfig/chipyard.TestHarness.FIRAccelRocketDualModeConfig/VTestHarness.h \
+ /usr/local/share/verilator/include/verilated_heavy.h \
+ /home/hmy/chipyard/sims/verilator/generated-src/chipyard.TestHarness.FIRAccelRocketDualModeConfig/chipyard.TestHarness.FIRAccelRocketDualModeConfig/VTestHarness__Dpi.h \
+ /usr/local/share/verilator/include/vltstd/svdpi.h \
+ /home/hmy/chipyard/riscv-tools-install/include/fesvr/dtm.h \
+ /home/hmy/chipyard/riscv-tools-install/include/fesvr/htif.h \
+ /home/hmy/chipyard/riscv-tools-install/include/fesvr/memif.h \
+ /home/hmy/chipyard/riscv-tools-install/include/fesvr/byteorder.h \
+ /home/hmy/chipyard/riscv-tools-install/include/fesvr/config.h \
+ /home/hmy/chipyard/riscv-tools-install/include/fesvr/syscall.h \
+ /home/hmy/chipyard/riscv-tools-install/include/fesvr/device.h \
+ /home/hmy/chipyard/riscv-tools-install/include/fesvr/context.h \
+ /home/hmy/chipyard/riscv-tools-install/include/fesvr/tsi.h \
+ /home/hmy/chipyard/sims/verilator/generated-src/chipyard.TestHarness.FIRAccelRocketDualModeConfig/remote_bitbang.h

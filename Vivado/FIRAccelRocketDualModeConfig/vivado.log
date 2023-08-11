@@ -1,0 +1,104 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug 11 12:17:12 2023
+# Process ID: 2004
+# Current directory: C:/Users/manyu/Desktop/FIRAccelRocket/FIRAccelRocketDualModeConfig
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18932 C:\Users\manyu\Desktop\FIRAccelRocket\FIRAccelRocketDualModeConfig\FIRAccelRocketDualModeConfig.xpr
+# Log file: C:/Users/manyu/Desktop/FIRAccelRocket/FIRAccelRocketDualModeConfig/vivado.log
+# Journal file: C:/Users/manyu/Desktop/FIRAccelRocket/FIRAccelRocketDualModeConfig\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/manyu/Desktop/FIRAccelRocket/FIRAccelRocketDualModeConfig/FIRAccelRocketDualModeConfig.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/manyu/Desktop/FIRAccelRocket/FIRAccelRocketDualModeConfig/FIRAccelRocketDualModeConfig.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vitis/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1104.555 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xczu3eg-sbva484-1-i
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1879.617 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2651 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2044.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 513 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 31 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 123 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 59 instances
+  RAM256X1D => RAM256X1D (MUXF7(x4), MUXF8(x2), RAMD64E(x8)): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 225 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 9 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 50 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 14 instances
+
+open_run: Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 2278.086 ; gain = 1173.531
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:19 ; elapsed = 00:00:06 . Memory (MB): peak = 3501.906 ; gain = 436.441
+export_ip_user_files -of_objects  [get_files C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.harness.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.top.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/SimJTAG.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/plusarg_reader.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/SimSerial.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/SimDRAM.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/IOCell.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.harness.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.top.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/SimJTAG.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/plusarg_reader.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/SimSerial.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/SimDRAM.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/IOCell.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property STEPS.SYNTH_DESIGN.ARGS.MAX_DSP 0 [get_runs synth_1]
+export_ip_user_files -of_objects  [get_files C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.top.mems.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.harness.mems.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/ClockDividerN.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/EICG_wrapper.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/SimUART.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.top.mems.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.harness.mems.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/ClockDividerN.sv C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/EICG_wrapper.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketGeneralConfig/SimUART.v}
+add_files -norecurse {C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/remote_bitbang.h C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/chipyard.TestHarness.FIRAccelRocketDualModeConfig.dromajo_params.h C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/mm.h C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/mm_dramsim2.h}
+add_files -norecurse {C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/ClockDividerN.sv C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/chipyard.TestHarness.FIRAccelRocketDualModeConfig.harness.mems.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/IOCell.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/EICG_wrapper.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/chipyard.TestHarness.FIRAccelRocketDualModeConfig.harness.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/chipyard.TestHarness.FIRAccelRocketDualModeConfig.top.mems.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/chipyard.TestHarness.FIRAccelRocketDualModeConfig.top.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/SimDRAM.v C:/Users/manyu/Desktop/FIRAccelRocket/chipyard.TestHarness.FIRAccelRocketDualModeConfig/plusarg_reader.v}
+set_property top ChipTop [current_fileset]
+reset_run synth_1
+close_design
+launch_runs synth_1 -jobs 6
+[Fri Aug 11 12:55:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/manyu/Desktop/FIRAccelRocket/FIRAccelRocketDualModeConfig/FIRAccelRocketDualModeConfig.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Aug 11 13:22:11 2023] Launched synth_1...
+Run output will be captured here: C:/Users/manyu/Desktop/FIRAccelRocket/FIRAccelRocketDualModeConfig/FIRAccelRocketDualModeConfig.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Aug 11 14:20:30 2023] Launched synth_1...
+Run output will be captured here: C:/Users/manyu/Desktop/FIRAccelRocket/FIRAccelRocketDualModeConfig/FIRAccelRocketDualModeConfig.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xczu3eg-sbva484-1-i
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4153.711 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3184 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 4153.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 478 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 123 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 59 instances
+  RAM256X1D => RAM256X1D (MUXF7(x4), MUXF8(x2), RAMD64E(x8)): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 221 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 9 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 50 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 14 instances
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 4153.711 ; gain = 0.000
+report_utilization -name utilization_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 11 22:20:49 2023...

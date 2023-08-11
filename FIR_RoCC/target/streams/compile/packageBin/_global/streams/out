@@ -1,0 +1,21 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/hmy/chipyard/generators/laccelerator/target/scala-2.12/laccelerator_2.12-1.6.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpcodeSet$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hmy/chipyard/generators/laccelerator/target/scala-2.12/classes/OpcodeSet$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCMRoCCAccel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hmy/chipyard/generators/laccelerator/target/scala-2.12/classes/LCMRoCCAccel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WithLCMRoCCAccel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hmy/chipyard/generators/laccelerator/target/scala-2.12/classes/WithLCMRoCCAccel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCM$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hmy/chipyard/generators/laccelerator/target/scala-2.12/classes/LCM$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WithLCMRoCCAccel$$anonfun$$lessinit$greater$1$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hmy/chipyard/generators/laccelerator/target/scala-2.12/classes/WithLCMRoCCAccel$$anonfun$$lessinit$greater$1$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpcodeSet.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hmy/chipyard/generators/laccelerator/target/scala-2.12/classes/OpcodeSet.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCM.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hmy/chipyard/generators/laccelerator/target/scala-2.12/classes/LCM.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCMRoCCAccel$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hmy/chipyard/generators/laccelerator/target/scala-2.12/classes/LCMRoCCAccel$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WithLCMRoCCAccel$$anonfun$$lessinit$greater$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hmy/chipyard/generators/laccelerator/target/scala-2.12/classes/WithLCMRoCCAccel$$anonfun$$lessinit$greater$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

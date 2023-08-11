@@ -1,0 +1,8 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/hmy/chipyard/generators/laccelerator/src/main/scala/LCMRoCCAccel.scala:69:32: method fire in class AddMethodsToReadyValid is deprecated (since Chisel 3.5): Calling this function with an empty argument list is invalid in Scala 3. Use the form without parentheses instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m        val canDecode = io.cmd.fire() && (io.cmd.bits.inst.funct===0.U)        [0m
+[0m[[0m[33mwarn[0m] [0m[0m                               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hmy/chipyard/generators/laccelerator/src/main/scala/LCMRoCCAccel.scala:95:22: method fire in class AddMethodsToReadyValid is deprecated (since Chisel 3.5): Calling this function with an empty argument list is invalid in Scala 3. Use the form without parentheses instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m        when(io.resp.fire()){[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 17 feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m

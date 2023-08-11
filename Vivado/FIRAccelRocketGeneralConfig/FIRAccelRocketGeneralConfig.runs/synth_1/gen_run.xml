@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xczu3eg-sbva484-1-i" LaunchTime="1691749247">
+  <File Type="PA-TCL" Name="ChipTop.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="ChipTop_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="ChipTop_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ChipTop.vds"/>
+  <File Type="RDS-UTIL" Name="ChipTop_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ChipTop_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ChipTop.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ChipTop_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ChipTop_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/EICG_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/EICG_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1691529440"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/IOCell.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/IOCell.v"/>
+        <Attr Name="ImportTime" Val="1691569593"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.top.mems.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.top.mems.v"/>
+        <Attr Name="ImportTime" Val="1691569653"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/plusarg_reader.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/plusarg_reader.v"/>
+        <Attr Name="ImportTime" Val="1691569630"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/ClockDividerN.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/ClockDividerN.sv"/>
+        <Attr Name="ImportTime" Val="1691569593"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.top.v"/>
+        <Attr Name="ImportTime" Val="1691569594"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/SimDRAM.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/SimDRAM.v"/>
+        <Attr Name="ImportTime" Val="1691569630"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.harness.mems.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.harness.mems.v"/>
+        <Attr Name="ImportTime" Val="1691569673"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.harness.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.harness.v"/>
+        <Attr Name="ImportTime" Val="1691569630"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketSymmetricConfig/chipyard.TestHarness.FIRAccelRocketSymmetricConfig.dromajo_params.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketSymmetricConfig/chipyard.TestHarness.FIRAccelRocketSymmetricConfig.dromajo_params.h"/>
+        <Attr Name="ImportTime" Val="1691746491"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketSymmetricConfig/mm.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketSymmetricConfig/mm.h"/>
+        <Attr Name="ImportTime" Val="1691746605"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketSymmetricConfig/remote_bitbang.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketSymmetricConfig/remote_bitbang.h"/>
+        <Attr Name="ImportTime" Val="1691746605"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketSymmetricConfig/mm_dramsim2.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketSymmetricConfig/mm_dramsim2.h"/>
+        <Attr Name="ImportTime" Val="1691746605"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/remote_bitbang.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/remote_bitbang.h"/>
+        <Attr Name="ImportTime" Val="1691569630"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.dromajo_params.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/chipyard.TestHarness.FIRAccelRocketGeneralConfig.dromajo_params.h"/>
+        <Attr Name="ImportTime" Val="1691569474"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/mm.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/mm.h"/>
+        <Attr Name="ImportTime" Val="1691569630"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chipyard.TestHarness.FIRAccelRocketGeneralConfig/mm_dramsim2.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../chipyard.TestHarness.FIRAccelRocketGeneralConfig/mm_dramsim2.h"/>
+        <Attr Name="ImportTime" Val="1691569630"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ChipTop"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design">
+      <Option Id="MaxDsp">0</Option>
+    </Step>
+  </Strategy>
+</GenRun>

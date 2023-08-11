@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug 11 14:20:32 2023
+# Process ID: 19716
+# Current directory: C:/Users/manyu/Desktop/FIRAccelRocket/FIRAccelRocketDualModeConfig/FIRAccelRocketDualModeConfig.runs/synth_1
+# Command line: vivado.exe -log ChipTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ChipTop.tcl
+# Log file: C:/Users/manyu/Desktop/FIRAccelRocket/FIRAccelRocketDualModeConfig/FIRAccelRocketDualModeConfig.runs/synth_1/ChipTop.vds
+# Journal file: C:/Users/manyu/Desktop/FIRAccelRocket/FIRAccelRocketDualModeConfig/FIRAccelRocketDualModeConfig.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ChipTop.tcl -notrace

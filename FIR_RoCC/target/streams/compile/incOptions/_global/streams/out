@@ -1,0 +1,32 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/hmy/chipyard/generators/laccelerator/target/scala-2.12/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WithLCMRoCCAccel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCM$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WithLCMRoCCAccel$$anonfun$$lessinit$greater$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpcodeSet$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WithLCMRoCCAccel$$anonfun$$lessinit$greater$1$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCM.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCMRoCCAccel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCMRoCCAccel$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpcodeSet.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WithLCMRoCCAccel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCM$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WithLCMRoCCAccel$$anonfun$$lessinit$greater$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpcodeSet$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WithLCMRoCCAccel$$anonfun$$lessinit$greater$1$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCM.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCMRoCCAccel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCMRoCCAccel$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpcodeSet.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpcodeSet$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OpcodeSet.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCMRoCCAccel$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WithLCMRoCCAccel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCM$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WithLCMRoCCAccel$$anonfun$$lessinit$greater$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCM.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WithLCMRoCCAccel$$anonfun$$lessinit$greater$1$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LCMRoCCAccel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /home/hmy/chipyard/generators/laccelerator/target/scala-2.12/classes.bak[0m
