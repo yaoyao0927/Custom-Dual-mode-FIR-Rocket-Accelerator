@@ -1,0 +1,7 @@
+[UART] UART0 is here (stdin/stdout).
+software FIR compute:
+SW average cycles used:  323
+hardware FIR compute:
+HW average cycles used:  27
+
+test successed! 
